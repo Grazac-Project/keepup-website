@@ -1,69 +1,218 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head"
+import ServicesCard from "../components/ServicesCard"
+import Hero from "../layouts/Hero"
+import { House, Laundry, Food, Semicolon } from "../icons"
+import Footer from "../components/Footer"
+import Accordion from "../components/Accordion"
+import FeedbackCard from "../components/FeedbackCard"
 
-export default function Home() {
+//carousel
+import Carousel from "react-multi-carousel"
+import "react-multi-carousel/lib/styles.css"
+import PaycheckCard from "../components/PaycheckCard"
+
+const services = [
+  {
+    icon: Laundry,
+    title: "Laundry",
+    main: `Learn foreign language by scheduling your Private Class chosen and teacher with your Learn foreign chosen time.`,
+  },
+  {
+    icon: House,
+    title: "House Cleaning",
+    main: `Learn foreign language by scheduling your Private Class chosen and teacher with your Learn foreign chosen time.`,
+  },
+  {
+    icon: Food,
+    title: "Food Delivery",
+    main: `Learn foreign language by scheduling your Private Class chosen and teacher with your Learn foreign chosen time.`,
+  },
+]
+
+const questionsAnswers = [
+  {
+    question: "What is Keep Up?",
+    answer: () => (
+      <div>
+        Digital Solution to help you manage your housework.
+        <br /> Keep-Up was built for ultimate comfort, time redeeming and maximum flexibility. We believe your weekends
+        weren't made for housework.
+        <br />
+        <br /> Get crisp laundry, unique house-cleaning, and fresh food items delivered straight to your doorstep on a
+        budget when you subscribe to our platform.
+      </div>
+    ),
+  },
+  {
+    question: "What Keep-Up does for you?",
+    answer: () => (
+      <div>
+        We offer three major services.
+        <br />
+        <br />
+        Laundry - KeepUp allows you to put all your laundry work on us. Your clothes are picked up from the door,
+        expertly cleaned, and returned in 48 hours ready to wear.
+        <br />
+        <br />
+        Housecleaning - KeepUp helps reduce your stress level by giving your home surface and deep cleaning with
+        prioritized and personalized attention.
+        <br />
+        <br />
+        Raw-Food Delivery - KeepUp delivers fresh food items to your doorstep at no extra cost while you enjoy the best
+        part of your weekends.
+      </div>
+    ),
+  },
+  {
+    question: "How Keep-Up works?",
+    answer: () => (
+      <div>
+        When you sign up on Keep-Up, you subscribe monthly to any/all of our service plans that meet your needs.
+        <br />
+        <br /> You can schedule each service plan just as you want it and we deliver to you within our turn-around time.
+        Track, pause, modify, edit or cancel your plans and schedules at will.
+      </div>
+    ),
+  },
+  {
+    question: "Who are Keep-Up Personnels?",
+    answer: () => (
+      <div>
+        Keep-Up Personell are our trained, responsible and qualified staff. They help you access the services, treat
+        your requests as tasks and ensure it’s delivered perfectly, giving you what you truly want.
+        <br />
+        <br />
+        They're the human side of Keep-Up: cautiously screened individuals (we run full personal investigations on all
+        Personnel).
+        <br />
+        <br />
+        Our Personell fit a profile. They're conscientious, responsive, capable and cordial. At the point when you sign
+        up on Keep-Up, you see a profile of your Personnel, and you can get an impression of them before they begin
+        taking care of your tasks.
+        <br />
+        <br />
+        Sign up for the cheapest option that saves you time and energy at home.
+        <br />
+        <br />
+        Get Early Access
+      </div>
+    ),
+  },
+]
+
+const feedback = [
+  {
+    profile: "/man.png",
+    name: "Cody Fischer",
+    main: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`,
+    work: "CEO, Parkview Int. Ltd.",
+    rating: [true, true, true, false, false],
+  },
+  {
+    profile: "/man.png",
+    name: "Cody Fischer",
+    main: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`,
+    work: "CEO, Parkview Int. Ltd.",
+    rating: [true, true, true, false, false],
+  },
+  {
+    profile: "/man.png",
+    name: "Cody Fischer",
+    main: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`,
+    work: "CEO, Parkview Int. Ltd.",
+    rating: [true, true, true, true, false],
+  },
+  {
+    profile: "/man.png",
+    name: "Cody Fischer",
+    main: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`,
+    work: "CEO, Parkview Int. Ltd.",
+    rating: [true, true, true, false, false],
+  },
+  {
+    profile: "/man.png",
+    name: "Cody Fischer",
+    main: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`,
+    work: "CEO, Parkview Int. Ltd.",
+    rating: [true, true, true, false, false],
+  },
+]
+
+const Home = () => {
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+  }
+
   return (
-    <div className={styles.container}>
+    <div className="">
       <Head>
-        <title>Create Next App</title>
+        <title>Keep up</title>
         <meta name="description" content="Generated by create next app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <div>
+        <Hero />
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="my-16 sm:my-32 max-w-xl mx-auto px-5">
+          <h1 className="text-2xl sm:text-4xl font-primary font-bold mb-10 text-head">Our Services</h1>
+          <div className={`lock flex gap-8 lg:justify-between flex-wrap md:flex-nowrap`}>
+            {services.map((item) => (
+              <ServicesCard content={item} />
+            ))}
+          </div>
         </div>
-      </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+        <div className="max-w-xl mx-auto p-8 relative sm:mb-16 mb-4">
+          <h1 className="faq__title text-2xl sm:text-4xl font-primary font-bold text-center">Customer’s Feedback</h1>
+
+          <div className="flex justify-center gap-4 mt-10 sm:mt-20">
+            <Semicolon />
+            <Semicolon />
+          </div>
+
+          <Carousel
+            arrows={false}
+            showDots={true}
+            renderDotsOutside={true}
+            responsive={responsive}
+            className="py-10"
+            infinite={true}
+          >
+            {feedback.map((item) => (
+              <FeedbackCard content={item} />
+            ))}
+          </Carousel>
+        </div>
+
+        <div className="max-w-md mx-auto p-8">
+          <h1 className="faq__title text-2xl sm:text-4xl font-primary font-bold">Frequently Asked Questions</h1>
+
+          <Accordion questionsAnswers={questionsAnswers} />
+        </div>
+
+        <div className="max-w-md mx-auto p-8 sm:my-40">
+          <PaycheckCard />
+        </div>
+      </div>
+
+      <Footer />
     </div>
   )
 }
+
+export default Home
