@@ -1,6 +1,13 @@
 import Navbar from "../components/Navbar"
 import Image from "next/image"
 import { useDevice } from "../hooks/useDevice"
+import Typed from "react-typed"
+
+const services = [
+  `<span style="color: #F58726;">Dry Cleaning.</span>`,
+  `<span style="color: #007A7A;">House Cleaning.</span>`,
+  `<span style="color: #000066;">Food Delivery</span>`,
+]
 
 const Hero = () => {
   const { isMobile, isTabPort } = useDevice()
@@ -18,7 +25,8 @@ const Hero = () => {
             >
               Let’s Give <br />
               Your Home Some
-              <br /> <span className="text-primary">Dry Cleaning.</span>
+              <br />
+              <Typed strings={services} typeSpeed={80} backSpeed={100} loop />{" "}
             </h1>
 
             <p className="leading-loose sm:w-2/3 font-secondary text-lg text-gray-light my-5">
