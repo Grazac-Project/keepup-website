@@ -30,7 +30,7 @@ const Accordion = ({ questionsAnswers, nav }) => {
   })
 
   return (
-    <div className="faq py-4 sm:py-12">
+    <div className="faq py-4">
       <dl className="faq__list">{renderedQuestionsAnswers}</dl>
 
       <style jsx>{styles}</style>

@@ -7,7 +7,7 @@ const AccordionItem = ({ showDescription, ariaExpanded, fontWeightBold, item, in
         aria-expanded={ariaExpanded}
         aria-controls={`faq${index + 1}_desc`}
         data-qa="faq__question-button"
-        className={`faq__question-button ${fontWeightBold} font-primary text-base sm:text-xl text-gray-100 noSelect
+        className={`faq__question-button ${fontWeightBold} font-primary text-base  text-gray-100 noSelect
         ${isNav && "font-semibold text-lg font-primary"}`}
         onClick={onClick}
       >

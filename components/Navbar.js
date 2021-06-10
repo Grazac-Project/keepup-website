@@ -75,24 +75,32 @@ const Navbar = () => {
       >
         <div className="max-w-xl mx-auto sm:px-12 pb-6 sm:py-4 p-8">
           {!isTabPort ? (
-            <div className="flex justify-between bg-transparent">
+            <div className="flex justify-between items-center bg-transparent">
               <div className="flex items-center">
                 <Link href="/" className="relative">
                   <Image src="/keepup.svg" alt="logo" height="30" width="115" />
                 </Link>
 
-                <ul className="flex list-none ml-24 text-gray-100 text-base font-secondary">
+                <ul className="flex items-center list-none ml-24 text-gray-100 text-base font-secondary">
                   <li className="mr-4 hover:underline active:underline">
                     <Link href="/about">About</Link>
                   </li>
-                  <li className="active:underline cursor-pointer flex items-center">
-                    <span className="hover:underline mr-2">Services</span>
-                    <DropDownArrow className="block mt-1" />
+
+                  <li>
+                    <Accordion
+                      className="hover:underline mr-2 active:underline cursor-pointer flex items-center"
+                      questionsAnswers={services}
+                      nav={true}
+                    >
+                      <Link>Services</Link>
+                    </Accordion>
                   </li>
+
+                  {/* <DropDownArrow className="block mt-1" /> */}
                 </ul>
               </div>
 
-              <Button>Get Early Access</Button>
+              <Button className="flex items-center">Get Early Access</Button>
             </div>
           ) : (
             <div className="flex items-center justify-between">
