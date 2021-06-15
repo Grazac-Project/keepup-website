@@ -58,6 +58,15 @@ const Hero = () => {
           background-image: url("/bg.svg");
           background-size: cover;
         }
+
+        .pt-28 {
+          padding-top: 7rem;
+        }
+
+        .@media (min-width: 640px) 
+          .sm\:pt-40 {
+            padding-top: 10rem;
+          }
       `}</style>
     </div>
   )
