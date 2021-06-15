@@ -82,9 +82,9 @@ const Navbar = () => {
                 </Link>
 
                 <ul className="flex items-center list-none ml-24 text-gray-100 text-base font-secondary">
-                  <li className="mr-4 hover:underline active:underline">
+                  {/* <li className="mr-4 hover:underline active:underline">
                     <Link href="/about">About</Link>
-                  </li>
+                  </li> */}
 
                   <li>
                     <Accordion
@@ -122,9 +122,9 @@ const Navbar = () => {
                   <span className="span-3"></span>
 
                   <ul id="menu" className="bg-pink text-gray-100 text-base font-primary">
-                    <li className="hover:underline active:underline font-semibold text-lg">
+                    {/* <li className="hover:underline active:underline font-semibold text-lg">
                       <Link href="/about">About</Link>
-                    </li>
+                    </li> */}
 
                     <Accordion questionsAnswers={services} nav={true} />
 
