@@ -7,7 +7,9 @@ const Footer = () => {
     <div className="sm:mt-72 mt-20">
       <div className="max-w-xl mx-auto px-8 flex justify-between flex-wrap">
         <div className="sm:mb-16 mb-10 md:w-2/6 w-full">
-          <h3 className="font-bold font-primary text-gray-dark text-xl sm:mb-8 mb-6">Get On Our Email List!</h3>
+          <h3 className="font-bold font-primary text-gray-dark text-xl sm:mb-8 mb-6">
+            Learn more about our services, discounts and special offers.
+          </h3>
 
           <form className="flex w-full">
             <input
@@ -41,13 +43,13 @@ const Footer = () => {
           <ul className="list-none mb-14">
             <li className="list-header">Service</li>
             <li className="list-item">
-              <Link href="/about">Laundry &amp; Dry Cleaning</Link>
+              <Link href="/laundry">Laundry &amp; Dry Cleaning</Link>
             </li>
             <li className="list-item">
-              <Link href="/about">Office &amp; Home Cleaning</Link>
+              <Link href="/cleaning">Office &amp; Home Cleaning</Link>
             </li>
             <li className="list-item__2">
-              <Link href="/about">Food Delivery</Link>
+              <Link href="/food">Food Delivery</Link>
             </li>
           </ul>
 

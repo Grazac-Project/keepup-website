@@ -4,9 +4,9 @@ import { useDevice } from "../hooks/useDevice"
 import Typed from "react-typed"
 
 const services = [
-  `<span style="color: #F58726;">Dry Cleaning.</span>`,
-  `<span style="color: #007A7A;">House Cleaning.</span>`,
-  `<span style="color: #000066;">Food Delivery</span>`,
+  `<span style="color: #F58726;">laundry </span>`,
+  `<span style="color: #007A7A;">house cleaning</span>`,
+  `<span style="color: #000066;">market runs</span>`,
 ]
 
 const Hero = () => {
@@ -23,20 +23,17 @@ const Hero = () => {
               className="text-gray-dark md:text-6xl text-4xl font-primary font-bold"
               style={{ lineHeight: `${isMobile ? "1.5" : "1.3"}` }}
             >
-              Let’s Give <br />
-              Your Home Some
-              <br />
-              <Typed strings={services} typeSpeed={80} backSpeed={100} loop />{" "}
+              Spend your time wisely. All your <br />
+              <Typed strings={services} typeSpeed={80} backSpeed={100} loop /> <br /> on us
             </h1>
 
             <p className="leading-loose sm:w-2/3 font-secondary text-lg text-gray-light my-5">
-              We take care of your <span className="text-gray-dark">chores</span>, so you can get more out of life. It’s
-              what you’ve always dreamed of.
+              We handle your housework so you can live a more comfortable life and enjoy the life of your dreams.
             </p>
 
             <div className="flex gap-2">
-              <Image src="/googlePlay.svg" width={160} height={70} />
               <Image src="/appleStore.svg" width={150} height={70} />
+              <Image src="/googlePlay.svg" width={160} height={70} />
             </div>
           </div>
 
@@ -63,10 +60,9 @@ const Hero = () => {
           padding-top: 7rem;
         }
 
-        .@media (min-width: 640px) 
-          .sm\:pt-40 {
-            padding-top: 10rem;
-          }
+        .@media (min-width: 640px) .sm\:pt-40 {
+          padding-top: 10rem;
+        }
       `}</style>
     </div>
   )

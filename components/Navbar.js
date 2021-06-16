@@ -100,7 +100,7 @@ const Navbar = () => {
                 </ul>
               </div>
 
-              <Button className="flex items-center">Get Early Access</Button>
+              <Button className="flex items-center">Get Started</Button>
             </div>
           ) : (
             <div className="flex items-center justify-between">
@@ -129,7 +129,7 @@ const Navbar = () => {
                     <Accordion questionsAnswers={services} nav={true} />
 
                     <li className="mt-6">
-                      <Button>Get Early Access</Button>
+                      <Button>Get Started</Button>
                     </li>
                   </ul>
                 </div>

@@ -14,15 +14,11 @@ import HowCard from "../components/HowCard"
 const hero = {
   header: () => (
     <>
-      Let’s Give Quality
-      <br /> <span className="text-blue">Food Delivery.</span>
+      Spend your time wisely. All your <span className="text-blue">Market Runs</span> on us.
     </>
   ),
   main: () => (
-    <>
-      We take care of your <span className="text-gray-dark">chores</span>, so you can get more out of life. It’s what
-      you’ve always dreamed of.
-    </>
+    <>Save time and enjoy the best part of your weekends while we deliver quality foodstuffs to your doorstep.</>
   ),
 }
 
@@ -66,19 +62,20 @@ const feedback = [
 
 const howItWorks = [
   {
-    title: "Create Account",
-    main:
-      "Once you’re finished, launch your registry and share yourHitchd URL with guests. Share yourHitchd URL with guests",
+    title: "Create an Account",
+    main: "Download and install KeepUp App. Sign up and create an account.",
   },
   {
-    title: "Create Account",
-    main:
-      "Once you’re finished, launch your registry and share yourHitchd URL with guests. Share yourHitchd URL with guests",
+    title: "Confirm your account",
+    main: "Check your email to confirm your account and sign in with your login details.",
   },
   {
-    title: "Create Account",
-    main:
-      "Once you’re finished, launch your registry and share yourHitchd URL with guests. Share yourHitchd URL with guests",
+    title: "Pick your choice",
+    main: "Choose the food item(s) you want from our price list, fill in your location, select your delivery date and subscribe to your preferred plan.",
+  },
+  {
+    title: "Delivery",
+    main: "Our staff will deliver your foodstuffs to your location on your preferred date at no extra cost.",
   },
 ]
 

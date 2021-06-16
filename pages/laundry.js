@@ -14,16 +14,10 @@ import HowCard from "../components/HowCard"
 const hero = {
   header: () => (
     <>
-      Let’s Give
-      <br /> <span className="text-blue">Dry Cleaning.</span>
+      Spend your time wisely. All your <span className="text-blue">Laundry</span> on us.
     </>
   ),
-  main: () => (
-    <>
-      We take care of your <span className="text-gray-dark">chores</span>, so you can get more out of life. It’s what
-      you’ve always dreamed of.
-    </>
-  ),
+  main: () => <>Your clothes are picked up from the door, expertly cleaned, and returned in 72 hours ready to wear.</>,
 }
 
 const feedback = [
@@ -66,19 +60,20 @@ const feedback = [
 
 const howItWorks = [
   {
-    title: "Create Account",
-    main:
-      "Once you’re finished, launch your registry and share yourHitchd URL with guests. Share yourHitchd URL with guests",
+    title: "Create an Account",
+    main: "Download and install KeepUp App. Sign up and create an account.",
   },
   {
-    title: "Create Account",
-    main:
-      "Once you’re finished, launch your registry and share yourHitchd URL with guests. Share yourHitchd URL with guests",
+    title: "Confirm your account",
+    main: "Check your email to confirm your account and sign in with your login details.",
   },
   {
-    title: "Create Account",
-    main:
-      "Once you’re finished, launch your registry and share yourHitchd URL with guests. Share yourHitchd URL with guests",
+    title: "Pick your choice",
+    main: "Choose the service(s) you want from our price list, fill in your location, select your pick-up date and subscribe to your preferred plan.",
+  },
+  {
+    title: "Delivery",
+    main: "Our staff will meet with you on your pick-up date to pick your items, clean your clothes to satisfaction and return them in 72 hours ready to wear upon delivery.",
   },
 ]
 

@@ -14,9 +14,9 @@ const ServicesCard = ({ content }) => {
       <h2 className="font-primary text-2xl font-bold text-gray-dark">{content.title}</h2>
       <p className="text-gray-light font-tertiary leading-loose">{content.main}</p>
 
-      <Link href="/d">
+      <Link href={content.href}>
         <span className="text-primary font-bold text-sm font-primary hover:underline cursor-pointer ease-in duration-150">
-          View More
+          Learn More
         </span>
       </Link>
 

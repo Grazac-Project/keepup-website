@@ -11,7 +11,7 @@ const SecondaryHero = ({ content }) => {
         <Navbar />
 
         <div className="flex justify-between pt-28 sm:pt-40">
-          <div className="lg:w-5/12 w-full">
+          <div className="lg:w-7/12 md:w-7/12 w-full">
             <h1
               className="text-gray-dark md:text-6xl text-4xl font-primary font-bold"
               style={{ lineHeight: `${isMobile ? "1.5" : "1.3"}` }}
@@ -22,8 +22,8 @@ const SecondaryHero = ({ content }) => {
             <p className="leading-loose sm:w-5/6 font-secondary text-lg text-gray-light my-5">{content.main()}</p>
 
             <div className="flex gap-2">
-              <Image src="/googlePlay.svg" width={160} height={70} />
               <Image src="/appleStore.svg" width={150} height={70} />
+              <Image src="/googlePlay.svg" width={160} height={70} />
             </div>
           </div>
 

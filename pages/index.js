@@ -15,17 +15,20 @@ const services = [
   {
     icon: Laundry,
     title: "Laundry",
-    main: `Learn foreign language by scheduling your Private Class chosen and teacher with your Learn foreign chosen time.`,
+    href: "/laundry",
+    main: `We pickup, clean and deliver your laundry meticulously to your doorstep every month.`,
   },
   {
     icon: House,
     title: "House Cleaning",
-    main: `Learn foreign language by scheduling your Private Class chosen and teacher with your Learn foreign chosen time.`,
+    href: "/cleaning",
+    main: `We give your home thorough and personalized attention with cleaning done your way and cost next to nothing.`,
   },
   {
     icon: Food,
-    title: "Food Delivery",
-    main: `Learn foreign language by scheduling your Private Class chosen and teacher with your Learn foreign chosen time.`,
+    title: "Raw Food Delivery",
+    href: "/food",
+    main: `Get organic quality food items delivered straight to your doorstep at no extra cost.`,
   },
 ]
 
@@ -67,34 +70,27 @@ const questionsAnswers = [
     question: "How Keep-Up works?",
     answer: () => (
       <div>
-        When you sign up on Keep-Up, you subscribe monthly to any/all of our service plans that meet your needs.
-        <br />
-        <br /> You can schedule each service plan just as you want it and we deliver to you within our turn-around time.
-        Track, pause, modify, edit or cancel your plans and schedules at will.
+        When you sign up on Keep-Up, you subscribe monthly to any/all of our service plans that meet your needs. You can
+        schedule each service plan just as you want it and we deliver to you within our turn-around time. Track, pause,
+        modify, edit or cancel your plans and schedules at will.
       </div>
     ),
   },
   {
-    question: "Who are Keep-Up Personnels?",
+    question: "Who are Keep-Up Home Managers?",
     answer: () => (
       <div>
-        Keep-Up Personell are our trained, responsible and qualified staff. They help you access the services, treat
+        Keep-Up Home Managers are our trained, responsible and qualified staff. They help you access the services, treat
         your requests as tasks and ensure it’s delivered perfectly, giving you what you truly want.
         <br />
         <br />
         They're the human side of Keep-Up: cautiously screened individuals (we run full personal investigations on all
-        Personnel).
+        <strong> home managers</strong>).
         <br />
         <br />
-        Our Personell fit a profile. They're conscientious, responsive, capable and cordial. At the point when you sign
-        up on Keep-Up, you see a profile of your Personnel, and you can get an impression of them before they begin
+        Our Personnel fit a profile. They're conscientious, responsive, capable and cordial. At the point when you sign
+        up on Keep-Up, you see a profile of your home manager, and you can get an impression of them before they begin
         taking care of your tasks.
-        <br />
-        <br />
-        Sign up for the cheapest option that saves you time and energy at home.
-        <br />
-        <br />
-        Get Early Access
       </div>
     ),
   },

@@ -8,8 +8,8 @@ const PaycheckCard = () => {
     <div className="flex justify-between relative">
       <div className="bg-primary sm:px-20 sm:py-16 p-10 rounded-3xl w-full">
         <div>{isTab && <Image src="/iphone3.png" width={285} height={549} />}</div>
-        <h2 className="font-primary text-white sm:text-4xl text-2xl font-bold leading-snug sm:w-80 w-full py-2">
-          Ready to put your paycheck to work?
+        <h2 className="font-primary text-white sm:text-4xl text-2xl font-bold leading-snug sm:w-3/5 w-full py-2">
+          Sign up for the cheapest option that saves you time and energy at home.
         </h2>
 
         <div className="flex gap-4 items-center">
