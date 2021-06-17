@@ -12,7 +12,7 @@ const HowCard = ({ content }) => {
         <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="35" cy="35" r="35" fill="#F58726" fill-opacity="0.1" />
         </svg>
-        <span className="font-primary text-2xl font-bold text-gray-dark flex absolute">{content.step}</span>
+        <span className="font-primary text-2xl font-bold text-gray-dark flex absolute top-5" style={{color: "#F58726"}}>{content.step}</span>
       </div>
 
       <h2 className="font-primary text-2xl font-bold text-gray-dark">{content.title}</h2>
