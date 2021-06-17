@@ -64,18 +64,22 @@ const feedback = [
 
 const howItWorks = [
   {
+    step: "01",
     title: "Create an Account",
     main: "Download and install KeepUp App. Sign up and create an account.",
   },
   {
+    step: "02",
     title: "Confirm your account",
     main: "Check your email to confirm your account and sign in with your login details.",
   },
   {
+    step: "03",
     title: "Pick your choice",
     main: "Choose the service(s) you want from our price list, fill in your location, select your pick-up date and subscribe to your preferred plan.",
   },
   {
+    step: "04",
     title: "Delivery",
     main: "Our staff will meet with you on your pick-up date to pick your items, clean your clothes to satisfaction and return them in 72 hours ready to wear upon delivery.",
   },

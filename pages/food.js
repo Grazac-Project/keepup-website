@@ -62,18 +62,22 @@ const feedback = [
 
 const howItWorks = [
   {
+    step: "01",
     title: "Create an Account",
     main: "Download and install KeepUp App. Sign up and create an account.",
   },
   {
+    step: "02",
     title: "Confirm your account",
     main: "Check your email to confirm your account and sign in with your login details.",
   },
   {
+    step: "03",
     title: "Pick your choice",
     main: "Choose the food item(s) you want from our price list, fill in your location, select your delivery date and subscribe to your preferred plan.",
   },
   {
+    step: "04",
     title: "Delivery",
     main: "Our staff will deliver your foodstuffs to your location on your preferred date at no extra cost.",
   },

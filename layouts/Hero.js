@@ -31,14 +31,18 @@ const Hero = () => {
               We handle your housework so you can live a more comfortable life and enjoy the life of your dreams.
             </p>
 
-            <div className="flex gap-2">
-              <Image className="cursor-pointer" src="/appleStore.svg" width={150} height={70} />
-              <Image className="cursor-pointer" src="/googlePlay.svg" width={160} height={70} />
+            <div className="flex">
+              <div>
+                <Image className="cursor-pointer" src="/appleStore.svg" width={150} height={70} />
+              </div>
+              <div className="ml-4">
+                <Image className="cursor-pointer ml-8" src="/googlePlay.svg" width={160} height={70} />
+              </div>
             </div>
           </div>
 
           {!isTabPort && (
-            <div className="flex gap-8">
+            <div className="flex space-x-10">
               <div className="flex self-start">
                 <Image src="/iphone1.png" width={285} height={549} />
               </div>
