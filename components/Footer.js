@@ -76,10 +76,10 @@ const Footer = () => {
       </span>
 
       <div className="max-w-xl mx-auto">
-        <div className="md:py-12 py-8 px-8 flex justify-between flex-col-reverse gap-4 sm:flex-row">
-          <small className="font-primary text-xs text-gray-100">{`${new Date().getFullYear()} Keepup Lifestyle Inc. All Rights Reserved.`}</small>
+        <div className="md:py-12 py-8 px-8 flex justify-between flex-col-reverse space-4 sm:flex-row">
+          <small className="font-primary text-xs text-gray-100 mt-4 sm:mt-0">{`${new Date().getFullYear()} Keepup Lifestyle Inc. All Rights Reserved.`}</small>
 
-          <div className="flex gap-5">
+          <div className="flex space-x-4">
             <a href="#">
               <Twitter />
             </a>
