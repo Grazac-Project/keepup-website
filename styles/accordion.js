@@ -55,6 +55,7 @@ export default css`
   .faq__question-button::after {
     content: url("/icon-arrow-down.svg");
     margin-right: 17px;
+    margin-left: 20px;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
   }

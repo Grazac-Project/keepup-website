@@ -19,7 +19,7 @@ const AccordionItem = ({ showDescription, ariaExpanded, fontWeightBold, item, in
         id={`faq${index + 1}_desc`}
         data-qa="faq__desc"
         className={`faq__desc ${showDescription} text-sm leading-relaxed sm:text-base text-gray-100 font-primary ${
-          isNav && "pl-4"
+          isNav && "pl-4 lg:fixed lg:bg-white lg:p-4 sm:rounded"
         }`}
       >
         {item.answer()}

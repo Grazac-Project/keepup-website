@@ -32,8 +32,8 @@ const Hero = () => {
             </p>
 
             <div className="flex gap-2">
-              <Image src="/appleStore.svg" width={150} height={70} />
-              <Image src="/googlePlay.svg" width={160} height={70} />
+              <Image className="cursor-pointer" src="/appleStore.svg" width={150} height={70} />
+              <Image className="cursor-pointer" src="/googlePlay.svg" width={160} height={70} />
             </div>
           </div>
 

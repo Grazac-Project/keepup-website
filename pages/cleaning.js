@@ -14,7 +14,7 @@ import HowCard from "../components/HowCard"
 const hero = {
   header: () => (
     <>
-      Spend your time wisely. All your <span className="text-blue">House Cleaning</span> on us.
+      Spend your time wisely. All your <span style={{ color: "#007A7A" }}>House Cleaning</span> on us.
     </>
   ),
   main: () => (

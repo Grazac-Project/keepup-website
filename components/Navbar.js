@@ -14,8 +14,8 @@ const services = [
       <ul>
         <li>
           <Link href="/laundry">
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-white shadow-lg rounded w-max" style={{ transform: "scale(0.75)" }}>
+            <div className="flex items-center gap-3 cursor-pointer">
+              <div className="p-2 bg-white rounded w-max" style={{ transform: "scale(0.75)" }}>
                 <Laundry />
               </div>
               <h4 className="font-tertiary text-base">Laundry</h4>
@@ -23,10 +23,10 @@ const services = [
           </Link>
         </li>
 
-        <li>
+        <li>  
           <Link href="/cleaning">
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-white shadow-lg rounded w-max" style={{ transform: "scale(0.75)" }}>
+            <div className="flex items-center gap-3 cursor-pointer">
+              <div className="p-2 bg-white rounded w-max" style={{ transform: "scale(0.75)" }}>
                 <House />
               </div>
               <h4 className="font-tertiary text-base">House Cleaning</h4>
@@ -36,8 +36,8 @@ const services = [
 
         <li>
           <Link href="/food">
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-white shadow-lg rounded w-max" style={{ transform: "scale(0.75)" }}>
+            <div className="flex items-center gap-3 cursor-pointer">
+              <div className="p-2 bg-white rounded w-max" style={{ transform: "scale(0.75)" }}>
                 <Food />
               </div>
               <h4 className="font-tertiary text-base">Food Delivery</h4>
@@ -73,7 +73,7 @@ const Navbar = () => {
         }`}
         ref={nav}
       >
-        <div className="max-w-xl mx-auto sm:px-12 pb-6 sm:py-4 p-8">
+        <div className="max-w-xl mx-auto sm:px-12 pb-6 p-8">
           {!isTabPort ? (
             <div className="flex justify-between items-center bg-transparent">
               <div className="flex items-center">
