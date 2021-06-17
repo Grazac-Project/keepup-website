@@ -17,12 +17,7 @@ const hero = {
       Spend your time wisely. All your <span style={{ color: "#007A7A" }}>House Cleaning</span> on us.
     </>
   ),
-  main: () => (
-    <>
-      Reduce your stress level while we give your home surface and deep cleaning with prioritized and personalized
-      attention.
-    </>
-  ),
+  main: () => <>Reduce your stress level while we give your home surface and deep cleaning with prioritized and personalized attention.</>,
 }
 
 const feedback = [
