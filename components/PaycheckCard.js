@@ -12,7 +12,7 @@ const PaycheckCard = () => {
           Sign up for the cheapest option that saves you time and energy at home.
         </h2>
 
-        <div className="flex gap-4 items-center">
+        <div className="flex space-4 gap-4 items-center">
           <Image className="cursor-pointer" src="/googlePlay2.svg" height={100} width={140} />
           <svg width="2" height="40" viewBox="0 0 2 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="2" height="40" transform="matrix(-1 0 0 1 2 0)" fill="white" fill-opacity="0.25" />

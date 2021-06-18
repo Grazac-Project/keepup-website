@@ -116,7 +116,7 @@ const Food = () => {
         <div className="my-16 sm:my-32 max-w-xl mx-auto px-5">
           <h1 className="faq__title text-2xl sm:text-4xl font-primary font-bold text-center mb-10">How It Works</h1>
 
-          <div className="flex gap-8 lg:justify-between flex-wrap lg:flex-nowrap">
+          <div className="lock flex space-y-8 space-x-0 sm:space-x-8 gap-8 sm:gap-0 sm:space-y-0 lg:justify-between flex-wrap md:flex-nowrap">
             {howItWorks.map((item) => (
               <HowCard content={item} />
             ))}
@@ -126,7 +126,7 @@ const Food = () => {
         <div className="max-w-xl mx-auto p-8 relative sm:mb-16 mb-4">
           <h1 className="faq__title text-2xl sm:text-4xl font-primary font-bold text-center">Customer’s Feedback</h1>
 
-          <div className="flex justify-center gap-4 mt-10 sm:mt-20">
+          <div className="flex justify-center space-x-4 gap-4 mt-10 sm:mt-20">
             <Semicolon />
             <Semicolon />
           </div>
