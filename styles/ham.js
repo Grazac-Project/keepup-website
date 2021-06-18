@@ -110,4 +110,37 @@ export default css`
     background-image: url("/bg.svg");
     background-size: cover;
   }
+
+  
+  .whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #F58726;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+
+  .whatsapp-icon {
+    margin-top: 20px;
+  }
+
+
+  @media screen and (max-width: 767px) 
+    .whatsapp-icon {
+      margin-top: 10px;
+    }
+    .whatsapp_float {
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 36px;
+    }
 `
