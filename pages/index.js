@@ -89,7 +89,7 @@ const questionsAnswers = [
         <strong> home managers</strong>).
         <br />
         <br />
-        Our Personnel fit a profile. They're conscientious, responsive, capable and cordial. At the point when you sign
+        Our home managers fit a profile. They're conscientious, responsive, capable and cordial. At the point when you sign
         up on Keep-Up, you see a profile of your home manager, and you can get an impression of them before they begin
         taking care of your tasks.
       </div>
