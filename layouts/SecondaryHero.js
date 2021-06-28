@@ -11,7 +11,7 @@ const SecondaryHero = ({ content }) => {
         <Navbar />
 
         <div className="flex justify-between pt-28 sm:pt-40">
-          <div className="lg:w-7/12 md:w-7/12 w-full">
+          <div className="lg:w-7/12 md:w-7/12 w-full hero-content content">
             <h1
               className="text-gray-dark md:text-6xl text-4xl font-primary font-bold"
               style={{ lineHeight: `${isMobile ? "1.5" : "1.3"}` }}
@@ -33,7 +33,7 @@ const SecondaryHero = ({ content }) => {
 
           {!isTabPort && (
             <div className="flex gap-8">
-              <div className="">
+              <div className="iphone1">
                 <Image src="/iphone1.png" width={285} height={549} />
               </div>
             </div>
@@ -45,6 +45,46 @@ const SecondaryHero = ({ content }) => {
         .hero {
           background-image: url("/bg2.svg");
           background-size: cover;
+        }
+
+        .content {
+          animation: moveInLeft 1.5s ease-out;
+        }
+
+        @keyframes moveInLeft {
+          0% {
+            opacity: 0;
+            transform: translateX(-100px);
+          }
+
+          80% {
+            transform: translateX(10px);
+          }
+
+          100% {
+            opacity: 1;
+            transform: translate(0);
+          }
+        }
+
+        .iphone1 {
+          animation: moveInRight 1.5s ease-out;
+        }
+
+        @keyframes moveInRight {
+          0% {
+            opacity: 0;
+            transform: translateX(100px);
+          }
+
+          80% {
+            transform: translateX(-10px);
+          }
+
+          100% {
+            opacity: 1;
+            transform: translate(0);
+          }
         }
       `}</style>
     </div>

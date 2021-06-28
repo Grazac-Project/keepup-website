@@ -18,11 +18,11 @@ const HowCard = ({ content }) => {
       <h2 className="font-primary text-2xl font-bold text-gray-dark">{content.title}</h2>
       <p className="text-gray-light font-tertiary leading-loose py-6">{content.main}</p>
 
-      <Link href="/d">
+      {/* <Link href="/d">
         <span className="text-primary font-bold text-sm font-primary hover:underline cursor-pointer ease-in duration-150">
           Learn More
         </span>
-      </Link>
+      </Link> */}
 
       <style jsx>{`
         .how {

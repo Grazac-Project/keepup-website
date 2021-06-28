@@ -42,7 +42,7 @@ const Hero = () => {
           </div>
 
           {!isTabPort && (
-            <div className="flex space-x-10 gap-8">
+            <div className="flex space-x-10 gap-8 anime">
               <div className="flex self-start">
                 <Image src="/iphone1.png" width={285} height={549} />
               </div>
@@ -66,6 +66,26 @@ const Hero = () => {
 
         .@media (min-width: 640px) .sm\:pt-40 {
           padding-top: 10rem;
+        }
+
+        .anime {
+          animation: moveInRight 1.5s ease-out;
+        }
+
+        @keyframes moveInRight {
+          0% {
+            opacity: 0;
+            transform: translateX(100px);
+          }
+
+          80% {
+            transform: translateX(-10px);
+          }
+
+          100% {
+            opacity: 1;
+            transform: translate(0);
+          }
         }
       `}</style>
     </div>
