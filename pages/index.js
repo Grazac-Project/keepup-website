@@ -166,7 +166,7 @@ const Home = () => {
           name="description"
           content="We handle your housework so you can live a more comfortable life and enjoy the life of your dreams."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/fav.ico" />
       </Head>
 
       <div>
