@@ -105,7 +105,9 @@ const Navbar = () => {
           ) : (
             <div className="flex items-center justify-between">
               <div className="relative">
-                <Image src="/keepup.svg" alt="logo" height="30" width="115" />
+                <Link href='/'>
+                  <Image src="/keepup.svg" alt="logo" height="30" width="115" />
+                </Link>
               </div>
 
               <nav role="navigation">

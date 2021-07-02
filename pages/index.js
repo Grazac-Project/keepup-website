@@ -202,7 +202,7 @@ const Home = () => {
           </Carousel>
         </div>
 
-        <div className="max-w-md mx-auto p-8">
+        <div className="max-w-md mx-auto p-8" id='faqs'>
           <h1 className="faq__title text-2xl sm:text-4xl font-primary font-bold">Frequently Asked Questions</h1>
 
           <Accordion questionsAnswers={questionsAnswers} />

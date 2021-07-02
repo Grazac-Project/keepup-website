@@ -33,10 +33,7 @@ const Footer = () => {
           <ul className="list-none mb-14">
             <li className="list-header">Company</li>
             <li className="list-item__2">
-              <Link href="/about">About Us</Link>
-            </li>
-            <li className="list-item">
-              <Link href="/about">Companies</Link>
+              <Link href="/">About Us</Link>
             </li>
           </ul>
 
@@ -56,16 +53,16 @@ const Footer = () => {
           <ul className="list-none mb-14">
             <li className="list-header">Resources</li>
             <li className="list-item__2">
-              <Link href="/about">FAQs</Link>
+              <a href="#faqs">FAQs</a>
             </li>
-            <li className="list-item">
+            {/* <li className="list-item">
               <Link href="/about">Blog</Link>
+            </li> */}
+            <li className="list-item">
+              <a href="mailto:info@keepup.ng" target='_blank'>Contact Us</a>
             </li>
             <li className="list-item">
-              <Link href="/about">Contact Us</Link>
-            </li>
-            <li className="list-item">
-              <Link href="/about">Terms &amp; Conditions</Link>
+              <Link href="/">Terms &amp; Conditions</Link>
             </li>
           </ul>
         </div>

@@ -25,6 +25,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 .noSelect {
   -webkit-tap-highlight-color: transparent !important;
 }
