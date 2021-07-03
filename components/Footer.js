@@ -1,8 +1,43 @@
 import Link from "next/link"
+import { useState } from "react"
 import { PaperPlane } from "../icons"
 import { Facebook, IG, Twitter, Linkedin } from "../icons"
 
 const Footer = () => {
+
+  const [email, setEmail] = useState('')
+
+  const handleChange = (e) => {
+    e.preventDefault()
+    let email = e.target.value
+    setEmail(email)
+  }
+
+  const handleSubmit =  async e => {
+    e.preventDefault();
+
+      const data = {
+      email: email,
+      fullname: '',
+      service: 'KEEP UP'
+    }
+
+    console.log(data)
+
+    const requestOptions = {
+      method: 'POST',
+      body: data,
+      redirect: 'follow'
+    }
+
+    const post = await fetch('https://newsletters.smartvesty.com/api/v1/subscriber', requestOptions)
+    .then(res => res.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+
+    setEmail('')
+  }
+
   return (
     <div className="sm:mt-72 mt-20">
       <div className="max-w-xl mx-auto px-8 flex justify-between flex-wrap">
@@ -11,13 +46,15 @@ const Footer = () => {
             Learn more about our services, discounts and special offers.
           </h3>
 
-          <form className="flex w-full">
+          <form className="flex w-full" onSubmit={handleSubmit}>
             <input
-              type="text"
+              type="email"
               placeholder="Your Email Address"
               className={`border-2 border-gray-50 py-2 px-4 font-tertiary text-gray-100 sm:h-12 h-14 outline-none
 								focus:border-primary ease-in duration-100 w-full`}
               style={{ borderRadius: "5px 0 0 5px" }}
+              value={email}
+              onChange={handleChange}
             />
             <button
               type="submit"
