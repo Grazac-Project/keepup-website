@@ -130,7 +130,7 @@ const Food = () => {
           </div>
         </div>
 
-        <div className="max-w-xl mx-auto p-8 relative sm:mb-16 mb-4">
+        {/* <div className="max-w-xl mx-auto p-8 relative sm:mb-16 mb-4">
           <h1 className="faq__title text-2xl sm:text-4xl font-primary font-bold text-center">Customer’s Feedback</h1>
 
           <div className="flex justify-center space-x-4 gap-4 mt-10 sm:mt-20">
@@ -150,7 +150,7 @@ const Food = () => {
               <FeedbackCard content={item} />
             ))}
           </Carousel>
-        </div>
+        </div> */}
 
         <div className="max-w-md mx-auto p-8 sm:my-40">
           <PaycheckCard />
