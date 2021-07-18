@@ -6,6 +6,7 @@ import Footer from "../components/Footer"
 import FeedbackCard from "../components/FeedbackCard"
 import styles from "../styles/ham"
 
+
 //carousel
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
@@ -21,6 +22,7 @@ const hero = {
   main: () => (
     <>Save time and enjoy the best part of your weekends while we deliver quality foodstuffs to your doorstep.</>
   ),
+  image: () => '/iphone4.png',
 }
 
 const feedback = [

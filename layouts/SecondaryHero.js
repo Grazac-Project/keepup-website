@@ -34,7 +34,7 @@ const SecondaryHero = ({ content }) => {
           {!isTabPort && (
             <div className="flex gap-8">
               <div className="iphone1">
-                <Image src="/iphone1.png" width={285} height={549} />
+                <Image src={content.image()} width={285} height={549} />
               </div>
             </div>
           )}

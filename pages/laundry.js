@@ -6,6 +6,8 @@ import Footer from "../components/Footer"
 import FeedbackCard from "../components/FeedbackCard"
 import styles from "../styles/ham"
 
+
+
 //carousel
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
@@ -15,14 +17,11 @@ import HowCard from "../components/HowCard"
 const hero = {
   header: () => (
     <>
-      Spend your time wisely. All your{" "}
-      <span style={{color: "#F58726"}}>
-        Laundry
-      </span>{" "}
-      on us.
+      Spend your time wisely. All your <span style={{ color: "#F58726" }}>Laundry</span> on us.
     </>
   ),
   main: () => <>Your clothes are picked up from the door, expertly cleaned, and returned in 72 hours ready to wear.</>,
+  image: () => "/iphone2.png",
 }
 
 const feedback = [

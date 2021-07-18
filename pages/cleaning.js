@@ -19,6 +19,7 @@ const hero = {
     </>
   ),
   main: () => <>Reduce your stress level while we give your home surface and deep cleaning with prioritized and personalized attention.</>,
+  image: () => '/iphone5.png'
 }
 
 const feedback = [
