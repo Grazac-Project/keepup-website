@@ -21,7 +21,7 @@ const hero = {
     </>
   ),
   main: () => <>Your clothes are picked up from the door, expertly cleaned, and returned in 72 hours ready to wear.</>,
-  image: () => "/iphone2.png",
+  image: () => "/iphone1.png",
 }
 
 const feedback = [

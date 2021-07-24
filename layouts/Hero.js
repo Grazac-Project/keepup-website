@@ -44,10 +44,10 @@ const Hero = () => {
           {!isTabPort && (
             <div className="flex space-x-10 gap-8 anime">
               <div className="flex self-start">
-                <Image src="/iphone2.png" width={285} height={549} />
+                <Image src="/iphone1.png" width={285} height={549} />
               </div>
               <div className="pt-16">
-                <Image src="/iphone4.png" width={285} height={549} />
+                <Image src="/iphone2.png" width={285} height={549} />
               </div>
             </div>
           )}
