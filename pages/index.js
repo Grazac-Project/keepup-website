@@ -17,7 +17,7 @@ const services = [
     icon: Laundry,
     title: "Laundry",
     href: "/laundry",
-    main: `We pickup, clean and deliver your laundry meticulously to your doorstep every month.`,
+    main: `We pickup, clean and deliver your laundry meticulously to your doorstep as often as you want it.`,
   },
   {
     icon: House,
@@ -55,7 +55,7 @@ const questionsAnswers = [
         <br />
         <br />
         Laundry - KeepUp allows you to put all your laundry work on us. Your clothes are picked up from the door,
-        expertly cleaned, and returned in 48 hours ready to wear.
+        expertly cleaned, and returned in 72 hours ready to wear.
         <br />
         <br />
         Housecleaning - KeepUp helps reduce your stress level by giving your home surface and deep cleaning with
